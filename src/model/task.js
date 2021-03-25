@@ -1,5 +1,5 @@
 // module.exports = function () {
-  
+
 //        var db = require('../libs/db-conecction')();
 
 //         var Schema = require('mongoose').Schema;
@@ -14,9 +14,9 @@
 //         return db.mongoose.model('task', Task);
 
 
-   
+
 // }
-module.exports = function(){
+module.exports = function () {
 
     var db = require('../libs/db-conecction')();
     var Schema = require('mongoose').Schema;
@@ -26,6 +26,6 @@ module.exports = function(){
         description: String,
         status: Boolean
     });
-    return db.model('tasks',Task);
+    return db.model('tasks', Task);
 }
 
